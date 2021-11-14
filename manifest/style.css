@@ -19,9 +19,10 @@ body {
 }
 
 .card-container {
-  margin-top: 80px;
+  margin-top: 150px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -39,23 +40,48 @@ p {
 
 hr {
   max-width: 950px;
-  border-top: 2px solid rgba(196, 208, 223, 0.4);
+  border-top: 3px solid rgba(68, 68, 68, 0.7);
   border-bottom: none;
 }
 
-.articles {
-  margin-top: 60px;
-  font-size: 28px;
+.link-wrap {
   text-align: center;
+}
+
+.show-articles {
+  opacity: 0.4;
+  margin-top: 60px;
+  font-size: 20px;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.show-articles:hover {
+  opacity: 1;
 }
 
 .card {
   width: 200px;
-  height: 250px;
-  background-color: rgba(196, 208, 223, 0.2);
+  min-height: 250px;
+  background-color: rgba(196, 208, 223, 0);
   border-radius: 5px;
   border: 2px solid rgba(196, 208, 223, 0.8);
   position: relative;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#news {
+  display: none;
 }
 
 .card-content {
