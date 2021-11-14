@@ -38,7 +38,7 @@ p {
 }
 
 hr {
-  max-width: 900px;
+  max-width: 950px;
   border-top: 2px solid rgba(196, 208, 223, 0.4);
   border-bottom: none;
 }
@@ -73,6 +73,10 @@ hr {
   color: #444;
   background-color: rgba(196, 208, 223, 0.1);
   border: 2px solid rgba(196, 208, 223, 0.9);
+}
+
+.btn:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 img {

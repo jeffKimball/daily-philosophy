@@ -3,6 +3,13 @@
     "name": "Daily Philosophy",
     "description": "Displays quotes and links related to philosophy",
     "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://dailyphilosophyapi.herokuapp.com/news"],
+            "css": ["style.css"],
+            "js": ["main.js"]
+        }
+    ],
     "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
