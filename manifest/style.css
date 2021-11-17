@@ -73,7 +73,7 @@ hr {
   width: 200px;
   min-height: 260px;
   background-color: rgba(95, 93, 187, 0.8);
-  border-radius: 5px 20% 5px 20%;
+  border-radius: 0px 20% 0px 20%;
   border: 2px solid #fffed9;
   position: relative;
   -webkit-box-shadow: 5px 6px 12px 0px rgba(0, 0, 0, 0.34);
