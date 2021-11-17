@@ -35,10 +35,20 @@ function getNews(){
         .then((response) => response.json())
         .then((data) => {
             const newsArr = (data.slice(1,6))
-            console.log(newsArr)
-            for(let i = 0; i < newsArr.length;i++){
-                title[i].innerText = newsArr[i].title
+
+            // Restrict the length of article headlines to 120 char
+            const newsArrTrunc = newsArr.map((story) => {
+                if(story.title.length >= 120){
+                    return story.title.slice(0,120) + '...'
+                }else{
+                    return story.title 
+                }
+            })
+            // newsArr has original data - newsArrTrunc has shortened titles
+            for(let i = 0; i < newsArrTrunc.length;i++){
+                title[i].innerText = newsArrTrunc[i]
                 link[i].href = newsArr[i].url
+                
             }
             
         })
