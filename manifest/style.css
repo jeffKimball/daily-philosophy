@@ -8,8 +8,10 @@
 
 body {
   margin: 0 50px;
-  background-color: #efefef;
-  color: #444;
+  background: url("mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fffed9;
   max-height: 100vh;
 }
 
@@ -37,12 +39,12 @@ h1 {
 p {
   font-size: 16px;
   letter-spacing: 1px;
-  color: #000;
+  color: #fffed9;
 }
 
 hr {
   max-width: 950px;
-  border-top: 3px solid rgba(68, 68, 68, 0.7);
+  border-top: 2px solid #fffed9;
   border-bottom: none;
 }
 
@@ -51,12 +53,16 @@ hr {
 }
 
 .show-articles {
-  opacity: 0.4;
   margin-top: 60px;
   font-size: 20px;
-  border-bottom: 2px solid #444;
+  border: 2px solid #fffed9;
+  padding: 6px 12px;
   display: inline-block;
   cursor: pointer;
+}
+
+.show-articles:hover {
+  transform: scale(0.98);
 }
 
 .show-articles:hover {
@@ -65,10 +71,10 @@ hr {
 
 .card {
   width: 200px;
-  min-height: 250px;
-  background-color: rgba(196, 208, 223, 0);
-  border-radius: 5px;
-  border: 3px solid rgba(196, 208, 223, 0.8);
+  min-height: 260px;
+  background-color: rgba(95, 93, 187, 0.8);
+  border-radius: 5px 20% 5px 20%;
+  border: 2px solid #fffed9;
   position: relative;
   -webkit-box-shadow: 5px 6px 12px 0px rgba(0, 0, 0, 0.34);
   box-shadow: 5px 6px 12px 0px rgba(0, 0, 0, 0.34);
@@ -95,25 +101,17 @@ hr {
 .btn {
   text-decoration: none;
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 4px 12px;
   font-weight: bold;
-  color: #444;
-  background-color: rgba(196, 208, 223, 0.1);
-  border: 2px solid rgba(196, 208, 223, 0.9);
+  color: #fffed9;
+  background-color: rgba(70, 44, 65, 0.1);
+  border: 2px solid #fffed9;
 }
 
 .btn:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-
-img {
-  position: absolute;
-  width: 50px;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: rgba(70, 44, 65, 0.2);
 }
